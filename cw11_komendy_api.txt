@@ -1,0 +1,17 @@
+sk.eyJ1IjoiemVnbGVuIiwiYSI6ImNscmRlZmhnbTBmdHoyam8zbGEzempkOHIifQ.xkmNaQaKjBrwv4VLgtUgZA
+
+
+curl -X POST "https://api.mapbox.com/uploads/v1/zeglen/credentials?access_token=sk.eyJ1IjoiemVnbGVuIiwiYSI6ImNscmRlZmhnbTBmdHoyam8zbGEzempkOHIifQ.xkmNaQaKjBrwv4VLgtUgZA"
+
+PS C:\Users\Dell> $env:AWS_ACCESS_KEY_ID="ASIATNLVGLR2IWS4BWEZ"
+PS C:\Users\Dell> $env:AWS_SECRET_ACCESS_KEY="nWBAYvS+y4qInQ26VBHkqyt2pp+6Rk270KSABiQB"
+PS C:\Users\Dell> $env:AWS_SESSION_TOKEN="FwoGZXIvYXdzEOP//////////wEaDPAdUorIcLNfZtkv5SKRAkTsyuVt4mSwGGflJjUurlcwMWB1RI95M23qeo09uDYptI/dFkToU6wxpLMOpGHViOq03XWAEpfwnu2OzjacjB2+TTJ2X4DRQG87/Lt/1vmxTpZ8w1p4/swZ3rlYgDtffEKt6+SioAmeSKZMhHWYjqWMCYYcZVHnT5a6XHznqaLvL912+iMBbig65autdeJPc5XjOLsmH8EtMHXumx9uV8WesHf/1r3zXTQojv1QX6NuNeGu1Amm4P5oJa6hSk3kMg230so4ewQA5dAx9HpgkAhSP59M9vqo2+b5Ga4GBhEy4mjWSsKOBcAARHIj6Po91kaHv84A81TQqkwFrPqR0ln5CXftx4kT4cjLN2sr9h48eyjjwZCtBjIpoD1qO17Ed07fb2yXk9X1N793gtvyRXXDdniW6ZMloEH0ZrEqQ1NT62E="
+
+aws s3 cp "C:\T2019_KAR_POI.zip" s3://tilestream-tilesets-production/b0/_pending/871jm2vhynm1j1k0y2qvsdrlc/zeglen --region us-east-1
+
+curl -X POST -H "Content-Type: application/json" -H "Cache-Control: no-cache" -d '{
+>>   "url": "http://tilestream-tilesets-production.s3.amazonaws.com/b0/_pending/871jm2vhynm1j1k0y2qvsdrlc/zeglen",
+>>   "tileset": "zeglen.cw11poi",
+>>   "name": "cw11poi"
+>> }' 'https://api.mapbox.com/uploads/v1/zeglen?access_token=sk.eyJ1IjoiemVnbGVuIiwiYSI6ImNscmRlZmhnbTBmdHoyam8zbGEzempkOHIifQ.xkmNaQaKjBrwv4VLgtUgZA'
+
