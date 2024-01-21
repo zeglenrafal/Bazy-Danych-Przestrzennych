@@ -1,0 +1,26 @@
+Name:
+Webhook - shapefile2geotiff from Dashboards - cd872a42-bffa-0635-8ff4-8617a2b173c3
+
+Token:
+8507904abbe3d49cfae3fb0b58ed8121c39f44da
+
+Description:
+Allow users to run Dashboards/shapefile2geotiff without logging in
+
+Created Date:
+2024-01-20T17:48:25.418Z
+
+Expiration Date:
+2025-01-19T23:00:00.000Z
+
+Enabled:
+true
+
+Authorization with Header:
+http://DESKTOP-H2SFC05/fmedatadownload/Dashboards/shapefile2geotiff.fmw?adres_email=zeglenrafal%40gmail.com&date2=20230718000000&client_email=zeglenrafal%40gmail.com&powiat=powiat%20ropczycko-s%C4%99dziszowski&cloud_coverage=25&date1=20230717000000&DestDataset_GEOTIFF=C%3A%5CUsers%5CDell%5CDocuments%5Cstudia%205%5Cbazy%5Ck%5D&SourceDataset_SHAPEFILE=%22C%3A%5CUsers%5CDell%5CDocuments%5Cstudia%205%5Cbazy%5Ck%5D%5Cpowiaty.shp%22&opt_showresult=false&opt_servicemode=sync
+Header Key: Authorization
+Header Value: fmetoken token=8507904abbe3d49cfae3fb0b58ed8121c39f44da
+
+Authorization with Query String:
+http://DESKTOP-H2SFC05/fmedatadownload/Dashboards/shapefile2geotiff.fmw?adres_email=zeglenrafal%40gmail.com&date2=20230718000000&client_email=zeglenrafal%40gmail.com&powiat=powiat%20ropczycko-s%C4%99dziszowski&cloud_coverage=25&date1=20230717000000&DestDataset_GEOTIFF=C%3A%5CUsers%5CDell%5CDocuments%5Cstudia%205%5Cbazy%5Ck%5D&SourceDataset_SHAPEFILE=%22C%3A%5CUsers%5CDell%5CDocuments%5Cstudia%205%5Cbazy%5Ck%5D%5Cpowiaty.shp%22&opt_showresult=false&opt_servicemode=sync&token=8507904abbe3d49cfae3fb0b58ed8121c39f44da
+
